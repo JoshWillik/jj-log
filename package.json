@@ -1,0 +1,23 @@
+{
+  "name": "jj-log",
+  "version": "1.0.0",
+  "description": "Json logging module",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshWillik/jj-log.git"
+  },
+  "keywords": [
+    "json",
+    "logging"
+  ],
+  "author": "Josh Vanderwillik <joshwillik@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshWillik/jj-log/issues"
+  },
+  "homepage": "https://github.com/JoshWillik/jj-log#readme"
+}
