@@ -137,3 +137,17 @@ log.warn({
 })
 //> {"level":"a bit worse this time"}
 ```
+
+### jj-log May be Silenced for Debugging
+```
+var jjLog = require( 'jj-log' )
+var log = jjLog({
+    silent: truet
+})
+
+log()
+//> no output
+```
+
+This can also be acheived by setting the SILENCE_JJ_LOG
+environment variable to true

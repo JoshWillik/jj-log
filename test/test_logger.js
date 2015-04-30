@@ -141,4 +141,14 @@ describe( 'Logger module', function(){
     assert.equal( outputObject.test, 'this is a test' )
   })
 
+  it( 'should output nothing if silent is set', function(){
+    var l = logger({
+      writeStream: outputStream,
+      silent: true
+    })()
+
+    var output = outputStream.read()
+    assert.equal( output, undefined )
+  })
+
 })
