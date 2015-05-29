@@ -1,6 +1,6 @@
 {
   "name": "jj-log",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Json logging module",
   "main": "lib/index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/JoshWillik/jj-log/issues"
   },
-  "homepage": "https://github.com/JoshWillik/jj-log#readme"
+  "homepage": "https://github.com/JoshWillik/jj-log#readme",
+  "dependencies": {
+    "bluebird": "^2.9.26"
+  }
 }
