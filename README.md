@@ -142,7 +142,7 @@ log.warn({
 ```
 var jjLog = require( 'jj-log' )
 var log = jjLog({
-    silent: truet
+    silent: true
 })
 
 log()
