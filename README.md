@@ -17,7 +17,7 @@ var log = jjLog()
 log({
     message: 'hello'
 })
-//> {"message":"hello", "timestamp":1430337665558}
+// >> {"message":"hello", "timestamp":1430337665558}
 ```
 
 ### Without Timestamps
@@ -30,7 +30,7 @@ var log = jjLog({
 log({
     message: 'hello'
 })
-//> {"message":"hello"}
+// >> {"message":"hello"}
 ```
 
 ### With Default Data
@@ -47,7 +47,7 @@ var log = jjLog({
 log({
     message: 'hello'
 })
-//> {"message":"hello","level":"info","package":"jj-log"}
+// >> {"message":"hello","level":"info","package":"jj-log"}
 ```
 
 ### With Additional Methods
@@ -70,12 +70,12 @@ var log = jjLog({
 log.warn({
     message: 'hello'
 })
-//> {"message":"hello","level":"warn","shouldWePanic":"probably not"}
+// >> {"message":"hello","level":"warn","shouldWePanic":"probably not"}
 
 log.fatal({
     message: 'hello'
 })
-//> {"message":"hello","level":"fatal","shouldWePanic":"absolutely"}
+// >> {"message":"hello","level":"fatal","shouldWePanic":"absolutely"}
 ```
 
 ### Attributes May Be Functions
@@ -98,12 +98,12 @@ var log = jjLog({
 log.fatal({
     message: 'oops'
 })
-//> {"message":"oops","level":"fatal","errorNumber":1}
+// >> {"message":"oops","level":"fatal","errorNumber":1}
 
 log.fatal({
     message: 'oops again'
 })
-//> {"message":"oops again","level":"fatal","errorNumber":2}
+// >> {"message":"oops again","level":"fatal","errorNumber":2}
 ```
 
 ### Default May be Overriden at Any Level
@@ -122,20 +122,20 @@ var log = jjLog({
 })
 
 log()
-//> {"level":"info"}
+// >> {"level":"info"}
 
 log({
     level: 'uh oh'
 })
-//> {"level":"uh oh"}
+// >> {"level":"uh oh"}
 
 log.warn()
-//> {"level":"info"}
+// >> {"level":"info"}
 
 log.warn({
     level: 'a bit worse this time'
 })
-//> {"level":"a bit worse this time"}
+// >> {"level":"a bit worse this time"}
 ```
 
 ### jj-log May be Silenced for Debugging
@@ -146,7 +146,7 @@ var log = jjLog({
 })
 
 log()
-//> no output
+// >> no output
 ```
 
 This can also be acheived by setting the SILENCE_JJ_LOG
