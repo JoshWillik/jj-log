@@ -80,7 +80,7 @@ log.fatal({
 
 ### Attributes May Be Functions
 
-```
+```js
 var fatalErrorsSoFar = 0
 var jjLog = require( 'jj-log' )
 var log = jjLog({
@@ -107,7 +107,7 @@ log.fatal({
 ```
 
 ### Default May be Overriden at Any Level
-```
+```js
 var jjLog = require( 'jj-log' )
 var log = jjLog({
     timestamps: false,
@@ -139,7 +139,7 @@ log.warn({
 ```
 
 ### jj-log May be Silenced for Debugging
-```
+```js
 var jjLog = require( 'jj-log' )
 var log = jjLog({
     silent: true
