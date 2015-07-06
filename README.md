@@ -9,15 +9,26 @@ $ npm install jj-log
 
 ## Usage
 
-### Defaults
+### Logging Strings
+
+```js
+var jjLog = require( 'jj-log' )
+var log = jjLog()
+
+log( 'something happened!' )
+// >> {"message":"something happened!", "timestamp":1430337665558}
+```
+
+### Logging Objects
 ```js
 var jjLog = require( 'jj-log' )
 var log = jjLog()
 
 log({
-    message: 'hello'
+    type: 'user_created',
+    user: 'billbob@bill.com'
 })
-// >> {"message":"hello", "timestamp":1430337665558}
+// >> {"type":"user_created", "user": "billbob@bill.com", "timestamp":1430337665558}
 ```
 
 ### Without Timestamps

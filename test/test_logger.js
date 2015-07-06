@@ -141,6 +141,19 @@ describe( 'Logger module', function(){
     assert.equal( outputObject.test, 'this is a test' )
   })
 
+
+  it( 'should allow logging strings and implicitly convert to a payload', function(){
+    var l = logger({
+      writeStream: outputStream
+    })
+
+    l( 'testing' )
+
+    var output = outputStream.read()
+    var outputObject = JSON.parse( output )
+    assert.equal( outputObject.message, 'testing' )
+  })
+
   it( 'should output nothing if silent is set', function(){
     var l = logger({
       writeStream: outputStream,
